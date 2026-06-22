@@ -1,6 +1,6 @@
 # =============================================================
 #  R Basics: Objects, Data Types, and Subsetting
-#  Author  : [Your Name]
+#  Author  : [Muhammad Hamdan]
 #  Purpose : A reproducible reference script covering core R
 #            concepts — ideal for beginners and quick revision.
 # =============================================================
