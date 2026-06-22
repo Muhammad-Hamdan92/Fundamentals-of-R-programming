@@ -250,3 +250,14 @@ x[1, , drop = FALSE]   # Returns row 1 as a 1×3 matrix, not a plain vector
 class(x[1, ])              # "numeric" — R drops the matrix structure by default
 class(x[1, , drop = FALSE]) # "matrix" / "array" — structure is kept with drop = FALSE
 
+# References:
+# [1] Wickham & Grolemund (2017). R for Data Science. O'Reilly.
+#     https://r4ds.had.co.nz
+# [2] Peng, R.D. (2022). R Programming for Data Science. Leanpub.
+#     https://bookdown.org/rdpeng/rprogdatascience/
+# [3] Wickham (2019). Advanced R, 2nd ed. CRC Press.
+#     https://adv-r.hadley.nz
+# [8] R Core Team (2024). R: A Language and Environment for
+#     Statistical Computing. R Foundation.
+
+
