@@ -122,8 +122,6 @@ table(df_titanic$class)
 
 #(2)-------------Loops-------------
 # first loop is [For loop]  ###A for loop repeats a syntax/code for each elemet in a pattern.
-for (i in 1:9) {
-  print(i)
-  }
+
 
 
