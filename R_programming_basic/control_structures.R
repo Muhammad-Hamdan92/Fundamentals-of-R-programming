@@ -121,7 +121,32 @@ table(df_titanic$class)
 
 
 #(2)-------------Loops-------------
-# first loop is [For loop]  ###A for loop repeats a syntax/code for each elemet in a pattern.
+# first loop is [while loop]  ###A for loop repeats a syntax/code for each elemet in a pattern.
 
+i <- 1
+# Basic: count up to 5
+while (i <= 5) {
+  cat("i =", i, "\n")
+  i <- i + 1   # MUST update i or loop runs forever!
+}
+#Titanic example — keep scanning passengers until we find the first female survivor:
 
+# Load data first
+url <- "https://raw.githubusercontent.com/datasciencedojo/datasets/master/titanic.csv"
+titanic <- read.csv(url)
+
+# Search using while loop
+i <- 1
+
+while (i <= nrow(titanic)) {
+  
+  if (titanic$Sex[i] == "female" && titanic$Survived[i] == 1) {
+    cat("First female survivor found at row", i, "\n")
+    cat("Name:", titanic$Name[i], "\n")
+    cat("Age :", titanic$Age[i],  "\n")
+    i <- nrow(titanic) + 1  # force loop to end
+  } else {
+    i <- i + 1
+  }
+}
 
